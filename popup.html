@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Email Extractor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <span class="icon">📧</span>
+        <h1>LMS Scraper</h1>
+      </div>
+      <p class="subtitle">Extract participants effortlessly</p>
+    </header>
+
+    <main>
+      <div id="setup-view">
+        <div class="info-card">
+          <p>Navigate to the <strong>Participants</strong> or <strong>Members</strong> page on your LMS to begin.</p>
+        </div>
+        <button id="start-scan" class="primary-btn">
+          <span class="btn-text">Start Scanning</span>
+          <span class="btn-glow"></span>
+        </button>
+      </div>
+
+      <div id="scanning-view" class="hidden">
+        <div class="progress-section">
+          <div class="loader"></div>
+          <p id="status-text">Scanning participants...</p>
+          <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+          </div>
+          <p id="progress-count">0 / 0 found</p>
+        </div>
+        <button id="stop-scan" class="secondary-btn">Stop</button>
+      </div>
+
+      <div id="results-view" class="hidden">
+        <div class="success-header">
+          <span class="check-icon">✓</span>
+          <h2>Extraction Complete</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span id="total-found" class="stat-value">0</span>
+            <span class="stat-label">Emails Found</span>
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button id="copy-btn" class="action-btn">
+            <span class="icon">📋</span> Copy List
+          </button>
+          <button id="download-btn" class="action-btn">
+            <span class="icon">📊</span> Download CSV
+          </button>
+        </div>
+        <button id="reset-btn" class="text-link">Start New Scan</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Built with ✨ for University Students</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

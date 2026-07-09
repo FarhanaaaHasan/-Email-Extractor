@@ -30,7 +30,7 @@ A powerful, modern Chrome Extension designed to help  quickly collect email addr
 4.  **Reporting:** You see a live progress bar as it works through the list.
 5.  **Completion:** Once finished, you can copy the list for Messenger groups or download a **CSV** (Excel file) for your records.
 
-## 🛠️ Technical Details
+##  Technical Details
 - **Version:** Manifest V3 (Latest Chrome standard).
 - **Core Tech:** HTML5, CSS3, Vanilla JavaScript (No heavy libraries, making it lightning fast).
 - **Security:** Requires minimal permissions (`activeTab`) to protect user privacy.

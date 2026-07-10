@@ -8,7 +8,29 @@ A powerful, modern Chrome Extension designed to help  quickly collect email addr
 - **Easy Export:** Copy all emails to your clipboard or download them as a professional CSV file.
 - **Premium Design:** Beautiful, glassmorphic UI built with modern CSS and Google Fonts (Outfit).
 
-##  Project Structure
+##  Installation & Usage
+
+### 1. Download the Project
+Clone this repository or download it as a ZIP file and extract it.
+
+### 2. Open Chrome Extensions
+- Open Google Chrome.
+- Go to `chrome://extensions/`.
+- Turn on **Developer mode** (top-right corner).
+
+### 3. Load the Extension
+- Click **Load unpacked**.
+- Select the project folder containing the extension files.
+- The extension will now appear in your Chrome toolbar.
+
+### 4. Use the Extension
+1. Open the LMS page that contains the list of participants.
+2. Click the **Email Extractor** extension icon.
+3. Click **Start Scanning**.
+4. Wait for the scan to finish.
+5. Copy the extracted email addresses or download them as a CSV file.
+
+
 
 | File | Description |
 | :--- | :--- |
